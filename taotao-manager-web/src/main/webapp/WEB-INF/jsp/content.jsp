@@ -48,6 +48,7 @@ var contentListToolbar = [{
     		return ;
     	}
     	TT.createWindow({
+			//跳转到另外的jsp，跳转到content-add.jsp
 			url : "/content-add"
 		}); 
     }

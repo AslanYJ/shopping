@@ -39,4 +39,6 @@
     <!--一个bean,可以在Controller中注入-->
     <dubbo:reference interface="com.taotao.service.ItemService" id="itemService" />
     <dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" />
+    <dubbo:reference interface="com.taotao.content.service.ContentCategoryService" id="contentCategoryService"/>
+    <dubbo:reference interface="com.taotao.content.service.ContentService" id="ContentService"/>
 </beans>

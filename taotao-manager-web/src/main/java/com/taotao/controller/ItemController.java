@@ -38,4 +38,9 @@ public class ItemController {
         return  itemService.addItem(item,desc);
     }
 
+    @RequestMapping("/rest/page/item-edit")
+    @ResponseBody
+    public TbItem updateItem() {
+        return null;
+    }
 }

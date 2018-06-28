@@ -64,4 +64,11 @@ public class ItemServiceImpl implements ItemService {
         itemDescMapper.insert(itemDesc);
         return TaotaoResult.ok();
     }
+
+
+    @Override
+    public TbItem updateItem(long itemId) {
+
+        return null;
+    }
 }

@@ -9,7 +9,6 @@
         <relativePath>../taotao-manager/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>taotao-manager-interface</artifactId>
     <dependencies>
         <dependency>
