@@ -62,7 +62,6 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
             //更新父节点
             tbContentCategoryMapper.updateByPrimaryKey(parent);
         }
-
         //返回结果
         return TaotaoResult.ok(contentCategory);
     }

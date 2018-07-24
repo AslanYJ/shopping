@@ -15,7 +15,6 @@ $(function(){
 		url : '/content/category/list',
 		animate: true,
 		method : "GET",
-        //弹出选择框
 		onContextMenu: function(e,node){
             e.preventDefault();
             $(this).tree('select',node.target);
@@ -24,7 +23,6 @@ $(function(){
                 top: e.pageY
             });
         },
-        //当鼠标离开的时候调用这个事件
         onAfterEdit : function(node){
         	var _tree = $(this);
         	if(node.id == 0){
@@ -48,13 +46,12 @@ $(function(){
 function menuHandler(item){
 	var tree = $("#contentCategory");
 	var node = tree.tree("getSelected");
-	//新增节点
 	if(item.name === "add"){
 		tree.tree('append', {
             parent: (node?node.target:null),
             data: [{
                 text: '新建分类',
-                id : 0,//初始化id为0
+                id : 0,
                 parentId : node.id
             }]
         }); 

@@ -7,7 +7,10 @@
   <groupId>com.lan</groupId>
   <artifactId>common-parent</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <modules>
+        <module>../taotao-cart-web</module>
+    </modules>
+    <packaging>pom</packaging>
 
   <name>common-parent</name>
   <!-- FIXME change it to the project's website -->
@@ -45,10 +48,17 @@
     <activemq.version>5.11.2</activemq.version>
     <freemarker.version>2.3.23</freemarker.version>
     <quartz.version>2.2.2</quartz.version>
+    <jmail.version>1.5.6</jmail.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
+      <!--Jmali组件-->
+      <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>javax.mail</artifactId>
+        <version>${jmail.version}</version>
+      </dependency>
       <!-- 时间操作组件 -->
       <dependency>
         <groupId>joda-time</groupId>

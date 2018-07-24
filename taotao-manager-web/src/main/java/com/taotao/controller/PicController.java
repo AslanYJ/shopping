@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 图片上传Contr
+ * 图片上传Controller
  */
 @Controller
 public class PicController {
